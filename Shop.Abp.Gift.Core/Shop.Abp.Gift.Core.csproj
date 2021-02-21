@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Shop</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp" Version="5.14.0" />
+  </ItemGroup>
+</Project>

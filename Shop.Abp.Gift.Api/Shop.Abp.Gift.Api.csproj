@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Shop</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.AspNetCore" Version="5.14.0" />
+    <!-- 测试用的包 -->
+    <!--<PackageReference Include="NSubstitute" Version="4.2.1" />-->
+    <!--<PackageReference Include="Moq" Version="4.15.1" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Utility\Utility.AspNet.Simple\Utility.AspNet.Simple.csproj" />
+    <ProjectReference Include="..\Shop.Abp.Gift.Application\Shop.Abp.Gift.Application.csproj" />
+  </ItemGroup>
+</Project>

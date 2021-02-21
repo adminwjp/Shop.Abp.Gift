@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Shop</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="app.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.NHibernate" Version="5.14.0" />
+    <PackageReference Include="Abp.Dapper" Version="5.14.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Utility\Utility.Simple\Utility.Simple.csproj" />
+    <ProjectReference Include="..\..\..\Utility\Utility.Db\Utility.Db.csproj" />
+    <ProjectReference Include="..\Shop.Abp.Gift.Core\Shop.Abp.Gift.Core.csproj" />
+  </ItemGroup>
+</Project>

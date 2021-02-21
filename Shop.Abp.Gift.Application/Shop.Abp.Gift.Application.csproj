@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Shop.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="app.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp.AutoMapper" Version="5.14.0" />
+    <PackageReference Include="Abp.MailKit" Version="5.14.0" />
+    <PackageReference Include="Abp.RedisCache" Version="5.14.0" />
+    <PackageReference Include="Abp.Quartz" Version="5.14.0" />
+    <ProjectReference Include="..\Shop.Abp.Gift.NHibernate\Shop.Abp.Gift.NHibernate.csproj" />
+  </ItemGroup>
+
+</Project>
